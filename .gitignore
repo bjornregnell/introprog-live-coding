@@ -1,0 +1,43 @@
+rsync-pdfs.sh
+tmp
+**/old
+**/bin
+
+# Latex
+**/*.aux
+**/*.log
+**/*.nav
+**/*.out
+**/*.snm
+**/*.vrb
+**/*.synctex.gz
+**/*.synctex.gz(busy)
+**/*.synctex(busy)
+**/*.toc
+**/*.fdb_latexmk
+**/*.fls
+
+# Java / Scala
+**/*.class
+**/.bloop
+**/.metals
+**/project/metals.sbt
+**/.bsp
+**/.scalafmt.conf
+**/.ammonite
+workspace/**/.vscode
+
+# Eclipse
+**/*.cache-main
+**/.metadata
+**/.classpath
+**/.project
+
+# Sbt
+**/target
+
+# Editor swap files
+*.swp   # vim
+*~      # emacs
+
+.idea
