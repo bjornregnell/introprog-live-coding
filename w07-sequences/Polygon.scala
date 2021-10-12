@@ -6,7 +6,7 @@ object Polygon:
 case class Polygon(points: Polygon.Pts):
   import Polygon.Pt
 
-  def size = points.size // for convenience but not really necessary (why?)
+  def size = points.size // behövs denna? använda export i stället?
 
   def append(pts: Pt*): Polygon = copy(points ++ pts.toVector)
 
