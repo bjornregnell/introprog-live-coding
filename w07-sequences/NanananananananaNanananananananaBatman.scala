@@ -2,13 +2,13 @@ object NanananananananaNanananananananaBatman:
   val na = "NanananananananaNanananananananaBatman"
   val nAppendsMax = math.pow(2, 15).toLong
 
-  def batmanImmutable(n: Int): (Long, String) = Timer.measure {
+  def batmanImmutable(n: Int): (Long, String) = Timer.millis {
     var result: String = na  //strings are immutable
     for i <- 2 to n do result = result + na //allocates new String for each append
     result  // return da String
   }
 
-  def batmanMutable(n: Int): (Long, String) = Timer.measure {
+  def batmanMutable(n: Int): (Long, String) = Timer.millis {
     var sb = new StringBuilder(na)  //StringBuilder is mutable
     for i <- 2 to n do sb.append(na) //append ***mutates*** the instance in place
     sb.toString                     //convert to immutable String and return
